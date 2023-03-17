@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
+import MainBody from './components/MainBody'
+import ParkingSpaceSeat from './pages/ParkingSpaceSeat'
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ParkingExit from './pages/ParkingExit';
 
-function App() {
+const App:React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainBody />} />
+          <Route path="/parkingSpaceSeat" element={<ParkingSpaceSeat />} />
+          <Route path="/parkingSpaceSeat/:id" element={<ParkingExit />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

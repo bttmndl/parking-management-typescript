@@ -1,0 +1,225 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    align-items: center;
+    height: 10vh;
+    background-color: bisque;
+}
+
+.mainBody {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_box {
+    width: 70%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input_box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input_button {
+    width: 60px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0;
+    border: none;
+    font-size: 15px;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.input_button:hover {
+    background-color: #388ae2;
+}
+
+.input_button:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.main-parking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parking-space-seat {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: .3rem;
+}
+
+.parking-seat {
+    width: 9%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+
+.date-time-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.date-picker,
+.time-picker {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 50%;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.popup-box-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-box {
+    position: relative;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-message {
+    font-size: 18px;
+    margin: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.main-parking-exit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parking-exit {
+    margin-top: 100px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parking-exit h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.parking-exit h1 span {
+    color: #333;
+    font-weight: bold;
+}
+
+.parking-exit h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.parking-exit h3 span {
+    color: #333;
+    font-weight: bold;
+}
+
+.parking-exit button {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.parking-exit button:hover {
+    background-color: #005a73;
+}
