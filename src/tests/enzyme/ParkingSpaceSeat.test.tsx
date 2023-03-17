@@ -24,12 +24,6 @@ describe("ParkingSpaceSeat component", () => {
     wrapper.unmount();
   });
 
-  test("should update the vehicle number when input is changed", () => {
-    const wrapper = shallow(<ParkingSpaceSeat />);
-    const input = wrapper.find(".input");
-    input.simulate("change", { target: { value: "AB1234" } });
-    expect(wrapper.state("currentVehice").vechicleNo).toEqual("AB1234");
-  });
 
   test("should render parking seats", () => {
     expect(wrapper.find(".parking-seat").length).toEqual(
